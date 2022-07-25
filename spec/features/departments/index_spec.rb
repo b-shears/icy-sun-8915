@@ -10,7 +10,6 @@ RSpec.describe 'department index page' do
     visit "/departments"
     expect(page).to have_content("Department: Parks and Rec")
     expect(page).to have_content("Floor: basement")
-
     # within "#department-#{parks_and_rec.id}" do
       expect(page).to have_content("Ron Swanson")
       expect(page).to have_content("Lesley Knope")

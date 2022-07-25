@@ -1,0 +1,8 @@
+<h1>Employees</h1>
+<p><%= "Employee: #{@employee.name}" %></p>
+<p> <%= "Employee Department: #{@employee.department.name}" %></p>
+
+<% @tickets.each do |ticket| %>
+<p><%= "#{ticket.subject}" %></p>
+<p><%= "#{ticket.age}" %></p>
+<% end %>
